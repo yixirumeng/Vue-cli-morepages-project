@@ -2,20 +2,20 @@
 
 > A Vue.js project
 
-## Build Setup
+基于vue-cli的多页面工程，对配置文件做一些调整后，可以轻松实现多页面。
 
-``` bash
-# install dependencies
-npm install
+### 1、首先安装glob，npm i glob -D
 
-# serve with hot reload at localhost:8080
-npm run dev
+### 2、更改build包下的utils.js文件
 
-# build for production with minification
-npm run build
+### 3、更改build包下的webpack.base.conf.js文件
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+### 4、更改build包下的webpack.dev.conf.js文件
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 5、更改build包下的webpack.prod.conf.js文件
+
+### 6、按src文件夹中的目录进行更改，包名须为pages，如果想用其它名字，请到utils.js中更改。每个页面的包名以及包内的文件名须一致。
+
+### 7、componenets包下为公共组件，assets包下为静态文件，这与之前的vue-cli一样
+
+#### 以上更改的地方已在文件中说明，都用了多个“--”进行标识
